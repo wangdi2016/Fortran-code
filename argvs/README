@@ -1,0 +1,7 @@
+In Fortran, the command-line arguments are accessed through the COMMAND_ARGUMENT_COUNT intrinsic function and the GET_COMMAND_ARGUMENT subroutine. These features allow you to retrieve the values passed to the program when it is executed from the command line.
+
+In this example, the program retrieves the number of command-line arguments using COMMAND_ARGUMENT_COUNT() and allocates an array (argValue) of the appropriate size to store the argument values. It then uses the GET_COMMAND_ARGUMENT subroutine to retrieve each argument value and its length.
+
+Finally, it prints the command-line arguments using a loop and deallocates the array. The trim(adjustl(...)) function is used to remove any trailing spaces from the argument values.
+
+the argValue array is allocated with a length of 100 characters, which should be sufficient to store most command-line arguments. You can adjust the length according to your specific needs.
